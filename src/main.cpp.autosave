@@ -1,0 +1,16 @@
+//#include "bili2magazine.h"
+#include "bili2login.h"
+#include <QApplication>
+
+int StateMachine = 0x00;
+QString str_bg,str_fullbg,str_slice;
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    BiLi2Login w;
+    w.show();
+
+
+    return a.exec();
+}
